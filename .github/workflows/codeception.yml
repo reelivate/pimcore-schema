@@ -134,9 +134,6 @@ jobs:
                     restore-keys: |
                         ${{ runner.os }}-composer-
 
-            -   name: Configure Composer Repository
-                run: composer config repositories.schema path "${{ github.workspace }}/lib/test-bundle"
-
             -   name: Composer install
                 env:
                     TEST_PIMCORE_VERSION: ${{ matrix.pimcore }}

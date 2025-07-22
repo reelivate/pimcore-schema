@@ -44,7 +44,7 @@ jobs:
                     -   pimcore: ~11.4.0
                         template_tag: 2024.3
                     -   pimcore: ~12.1.0
-                        template_tag: 2025.1
+                        template_tag: 2025.x
         steps:
             -   uses: actions/checkout@v4
                 with:

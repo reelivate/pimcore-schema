@@ -8,4 +8,4 @@ setup_files:
     - { path: app/controller/DefaultController.php, dest: ./src/Controller/ }
     - { path: app/templates/default.html.twig, dest: ./templates/default/ }
 additional_composer_packages:
-    - { package: pimcore/admin-ui-classic-bundle, version: ^1.0 }
+    - { package: pimcore/admin-ui-classic-bundle, version: "%ADMIN_UI_VERSION%" }

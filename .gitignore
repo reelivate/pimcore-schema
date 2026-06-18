@@ -41,8 +41,7 @@ atlassian-ide-plugin.xml
 ehthumbs.db
 Thumbs.db
 php-cgi.core
-/vendor/
-/composer.lock
+/vendor
 
 # codeception (only stage *.dist.yml config files)
 /codeception.yml

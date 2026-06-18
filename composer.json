@@ -35,7 +35,7 @@
         }
     },
     "require": {
-        "pimcore/pimcore": "^11.0",
+        "pimcore/pimcore": "^11.0|^12.0",
         "spatie/schema-org": "^3.0"
     },
     "require-dev": {
@@ -48,5 +48,13 @@
     },
     "suggest": {
         "dachcom-digital/seo": "^3.0"
+    },
+    "config": {
+        "allow-plugins": {
+            "php-http/discovery": true
+        }
+    },
+    "scripts": {
+        "phpstan": "vendor/bin/phpstan analyse -c ./phpstan.neon -a ./tests/_phpstan-bootstrap.php -l 4 src/"
     }
 }

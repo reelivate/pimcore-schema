@@ -53,5 +53,8 @@
         "allow-plugins": {
             "php-http/discovery": true
         }
+    },
+    "scripts": {
+        "phpstan": "vendor/bin/phpstan analyse -c ./phpstan.neon -a ./tests/_phpstan-bootstrap.php -l 4 src/"
     }
 }
